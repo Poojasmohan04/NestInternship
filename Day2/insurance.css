@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #000;
+    color: #e0e0e0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;             /* White background */
+    padding: 15px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.nav-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.nav-link {
+    color: #000;                  /* Black text */
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #444;
+}
+
+/* Prevent content from hiding under navbar */
+body {
+    padding-top: 80px;
+}
+
+
+/* MAIN HEADING */
+.top-heading {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.top-heading h1 {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.75);
+    letter-spacing: 2px;
+}
+
+/* HERO IMAGE */
+.hero {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.hero img {
+    width: 95%;
+    max-width: 1200px;
+    height: 650px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.5s;
+}
+
+.hero img:hover {
+    transform: scale(1.02);
+}
+
+/* INTRO PARAGRAPH */
+.intro {
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+/* OFFERINGS HEADING */
+.offer-head {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-size: 28px;
+    color: #ff9800; /* soft orange accent */
+    font-weight: 500;
+}
+
+/* OFFER SECTION */
+.offer-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 50px auto;
+    flex-wrap: wrap;
+}
+
+.offer-section.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Sub-offer images bigger */
+.offer-section img {
+    width: 55%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.5s;
+}
+
+.offer-section img:hover {
+    transform: scale(1.05);
+}
+
+.offer-text {
+    flex: 1;
+    font-size: 18px;
+    line-height: 2;
+    color: #e0e0e0;
+    background: rgba(0,0,0,0.3);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+/* CONTACT */
+.contact {
+    text-align: center;
+    padding: 40px;
+    background: #111;
+    color: #ff9800; /* soft orange */
+    border-top: 1px solid rgba(255,152,0,0.3);
+}
+
+.contact h2 {
+    margin-bottom: 10px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 900px) {
+    .offer-section, .offer-section.reverse {
+        flex-direction: column;
+    }
+
+    .offer-section img, .offer-section.reverse img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero img {
+        height: 450px;
+    }
+}

@@ -1,0 +1,64 @@
+body {
+    background-color: black !important;
+    color: white !important;
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+.navbar { 
+    background-color: rgb(255, 255, 255) !important;
+    height: 90px;
+}
+.navbar-brand {
+    margin-left: 10px;
+    color: white !important;
+}
+
+
+/* Remove duplicate nav styling */
+nav {
+    background-color: transparent !important; 
+}
+
+/* Carousel */
+#carouselExampleCaptions .carousel-item img {
+    height: 800px;
+    object-fit: cover;
+}
+#carouselhead{
+    text-align: center;
+    font-size: 60px;  
+    top: 5px;
+}
+#carouseltext{
+    text-align: center;
+    font-size: 30px; 
+}
+
+/* Business heading */
+#first {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+/* Cards row */
+.row {
+    margin-top: 10px;
+    padding: 20px;
+}
+
+/* Contact section */
+#contact {
+    background-color: rgba(255, 255, 255, 0.196);
+    padding: 80px;
+    margin-top: 50px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+footer{
+    text-align: center;
+}
